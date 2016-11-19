@@ -46,7 +46,7 @@ window.onload = function(){
 </style>
 <div class="data_list">
 		<div class="data_list_title">
-			学生管理
+			酒店预订
 		</div>
 		<form name="myForm" class="form-search" method="post" action="student?action=search" style="padding-bottom: 0px">
 				<button class="btn btn-success" type="button" style="margin-right: 50px;" onclick="javascript:window.location='student?action=preSave'">添加</button>
@@ -84,7 +84,7 @@ window.onload = function(){
 				<c:forEach  varStatus="i" var="student" items="${studentList }">
 					<tr>
 						<%-- <td>${i.count+(page-1)*pageSize }</td> --%>
-						<td>${student.userName }</td>
+						<td>${student.userName}</td>
 						<td>${student.name }</td>
 						<td>${student.sex }</td>
 						<td>${student.dormBuildName==null?"无":student.dormBuildName }</td>

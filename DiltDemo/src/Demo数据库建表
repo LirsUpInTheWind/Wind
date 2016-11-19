@@ -1,0 +1,52 @@
+create table DemoUser(
+	userNumber number(20) primary key not null,
+	username varchar2(20) not null,
+	password varchar2(20) not null	
+)
+insert into DemoUser (userNumber,username,password) values(1001,'蒋介石','100')
+管理员登陆用户表
+
+create table DemoMannager(
+	userNumber number(20) primary key not null,
+	username varchar2(20) not null,
+	password varchar2(20) not null	
+)
+
+insert into DemoMannager (userNumber,username,password) values(100,'小花','2010')
+
+菜系数据库设计
+create table cai(
+	id number(10) primary key not null,
+	cainame varchar2(60) not null,
+	suger varchar2(20) not null,
+	oil varchar2(20) not null,
+	danbaizhi varchar2(20) not null,
+	weishengsu varchar2(20) not null,
+	wujiyan varchar2(20) not null,
+    miaoshu varchar2(20)	
+)
+用餐记录
+create table record(
+	id number(10) not null,
+	name varchar2(20) not null,
+	caiid number(10) not null,
+	cainame varchar2(20) not null,
+	time varchar2(20) primary key not null
+)
+insert into record values(140930301,'小涛',101,'牛肉','2014');
+
+建立用户个人信息表
+create table user3(
+	id number(10) primary key not null,
+	name varchar2(20) not null,
+	sex varchar2(20) not null,
+	majoy varchar2(40) not null,
+	password number(20) not null
+)
+insert into user3 (id,name,sex,majoy) values(140930301,'小涛','男','信息与计算科学')
+
+蛋白质 70g
+脂肪100g
+碳水化合物300g
+维生素1g
+无机盐20g

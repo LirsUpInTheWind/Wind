@@ -56,7 +56,7 @@
 		<div align="center"><font color="red">${error }</font></div>
 		<div class="pagination pagination-centered">
 			<ul>
-				${pageCode }
+				${pageCode}
 			</ul>
 		</div>
 </div>
