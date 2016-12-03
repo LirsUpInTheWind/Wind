@@ -16,10 +16,12 @@ function checkForm(){
 	return true;
 }
 	
-	$(document).ready(function(){
-		$("ul li:eq(5)").addClass("active");
-	});
+$(document).ready(function(){
+	$("ul li:eq(5)").addClass("active");
+});
 </script>
+
+
 <div class="data_list">
 		<div class="data_list_title">
 			修改密码
